@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var interval = setInterval(function() {
       var newIndex = (currentSlide + 1) % slides.length;
       showSlide(newIndex);
-    }, 2000);
+    }, 6000);
   
     // Pausar el carrusel al pasar el ratón sobre él
     var carousel = document.querySelector('.carousel');
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
       interval = setInterval(function() {
         var newIndex = (currentSlide + 1) % slides.length;
         showSlide(newIndex);
-      }, 2000);
+      }, 6000);
     });
   });
   

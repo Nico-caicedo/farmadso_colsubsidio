@@ -35,7 +35,7 @@ nextButton.addEventListener('click', function(e) {
 var interval = setInterval(function() {
   var newIndex = (currentSlide + 1) % slides.length;
   showSlide(newIndex);
-}, 2000);
+}, 6000);
 
 // Pausar el carrusel al pasar el ratón sobre él
 var carousel = document.querySelector('.carouselo');
@@ -47,7 +47,7 @@ carousel.addEventListener('mouseleaveo', function() {
   interval = setInterval(function() {
     var newIndex = (currentSlide + 1) % slides.length;
     showSlide(newIndex);
-  }, 2000);
+  },6000);
 });   
 
 });

@@ -21,6 +21,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
 }
 
 .logo {
@@ -186,6 +189,7 @@ a {
     background-color: var(--azulOscuro);
     color: var(--blanco);
     padding: .5rem;
+    margin-top: 6em;
 }
 
 
