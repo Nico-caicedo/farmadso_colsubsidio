@@ -1,64 +1,98 @@
 
-  
-.awSlider .carousel {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 30em;
-    overflow: hidden;
-  }
-  
-  .carousel-inner {
-    width: 100%;
-    transition: transform 0.3s ease;
-  }
-  
-  .carousel-inner .item {
-    display: none;
-    position: absolute;
-  }
-  
-  .carousel-inner .item.active {
-    display: block;
-  }
-  
-  .carousel-inner img {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  .carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .carousel-indicators li {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #fff;
-    margin: 0 5px;
-    cursor: pointer;
-  }
-  
-  .carousel-indicators .active {
-    background-color: #333;
-  }
-  
-  .carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    text-align: center;
-  }
-  
+
+section.awSlider {
+  text-align: center;
+  width: 100%;
+  height: 20em;
+}
+
+.carousel-container {
+  display: inline-block;
+  position: relative;
+  height: 20em;
+}
+
+.carousel {
+  display: inline-block;
+  position: relative;
+  /* Añadido: para centrar el carrusel */
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.carousel-inner .item {
+  display: none;
+  position: absolute;
+}
+
+.carousel-inner .item.active {
+  display: block;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: auto;
+}
+
+.carousel-indicators {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicators .active {
+  background-color: #333;
+}
+
+.carousel-caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+.carousel-control.left {
+  left: 0;
+}
+
+.carousel-control.right {
+  right: 0;
+}
