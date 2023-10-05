@@ -66,3 +66,25 @@
     z-index: 2;
   
   }
+  /* segunda modal */
+  #contenido-ventana1{
+    display: flex;
+    width: 100%;
+    height: 95%;
+    border: 1px solid;
+  }
+  .masdetalles1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    border: 1px solid red;
+  }
+  .masdetalles1 img{
+    width: 80%;
+  }
+  .masdetalles{
+    
+    width: 50%;
+    border: 1px solid red;
+  }
