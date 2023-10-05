@@ -44,13 +44,10 @@
     <script src="assets/js/menuDesplegable.js"></script>
     <script src="assets/js/menuHamburguer.js"></script>
     <script src="assets/js/carrusel.js"></script>
-<<<<<<< HEAD
     <script src="assets/js/carruselnovedades.js"></script>
     <script src="assets/js/carruseltop.js"></script>
     <script src="assets/js/carruselo.js"></script>
-=======
     <script src="assets/js/modal_carrito.js" ></script>
->>>>>>> 6af061a7296464760d3f5aa70a6d62135a65036e
 </body>
 
 </html>
