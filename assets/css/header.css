@@ -175,7 +175,7 @@ ul {
 a {
     text-transform: capitalize;
     text-decoration: none;
-    color: #03066a;
+
 }
 
 /* section menu de categorias */
@@ -242,8 +242,8 @@ a {
 }
 .analgesic{
     display:flex;
-    width: 30%;
-    height: 50%;
+    width: 5em;
+    height: 5em;
     background: cover;
     border-radius: 50%;
     border: 4px solid var(--azulClaro);
