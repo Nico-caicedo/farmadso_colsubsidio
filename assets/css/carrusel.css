@@ -1,51 +1,61 @@
-
+.carrusleRecomendaciones{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
 
 section.awSlider {
   text-align: center;
-  width: 100%;
-  height: 20em;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .carousel-container {
-  display: inline-block;
-  position: relative;
-  height: 20em;
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.288);
 }
 
 .carousel {
-  display: inline-block;
-  position: relative;
-  /* Añadido: para centrar el carrusel */
-  margin: 0 auto;
+  display: flex; /* Cambiado a flex */
+  flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
+  align-items: center; 
+  /* Añadido para centrar items horizontalmente */
 }
 
 .carousel-inner {
   width: 100%;
-  transition: transform 0.3s ease;
+  border: 2px solid #ccc; /* Añadido */
+  overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
 }
 
 .carousel-inner .item {
   display: none;
-  position: absolute;
 }
 
 .carousel-inner .item.active {
-  display: block;
+  display: flex; /* Cambiado a flex */
+  height: auto;
+  flex-direction: column;
 }
 
 .carousel-inner img {
-  max-width: 100%;
+  max-width: 120%;
   height: auto;
 }
 
-.carousel-indicators {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+.carousel-indicators { /* Añadido espacio entre indicadores y carrusel */
   list-style: none;
-  margin: 0;
   padding: 0;
+  display: flex; /* Añadido flex para centrar indicadores */
+  justify-content: center; /* Añadido para centrar indicadores horizontalmente */
 }
 
 .carousel-indicators li {
@@ -53,33 +63,124 @@ section.awSlider {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #c0c0c0;
   margin: 0 5px;
   cursor: pointer;
 }
 
 .carousel-indicators .active {
-  background-color: #333;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 10px;
-  background: rgba(0, 0, 0, 0.5);
-  color: #fff;
-  text-align: center;
+  background-color: #3b3055;
 }
 
 .carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+}
+
+.carousel-control.left {
+  left: 10px;
+}
+
+.carousel-control.right {
+  right: 10px;
+}
+
+.carousel-caption {
+  position: relative;
+  padding: 10px;
+  background-color: #2d57a8;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel-caption h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.carousel-caption p {
+  margin: 0;
+}
+
+
+
+/* NOVEDAD */
+
+section.awSlidern {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-containern {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.288);
+}
+
+.carouseln {
+  display: flex; /* Cambiado a flex */
+  flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
+  align-items: center; /* Añadido para centrar items horizontalmente */
+}
+
+.carousel-innern {
+  width: 100%;
+  border: 2px solid #ccc; /* Añadido */
+  overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
+}
+
+.carousel-innern .itemn {
+  display: none;
+}
+
+.carousel-innern .itemn.active {
+  display: flex; /* Cambiado a flex */
+  height: auto;
+  flex-direction: column;
+}
+
+.carousel-innern img {
+  max-width: 120%;
+  height: auto;
+}
+
+.carousel-indicatorsn { /* Añadido espacio entre indicadores y carrusel */
+  list-style: none;
+  padding: 0;
+  display: flex; /* Añadido flex para centrar indicadores */
+  justify-content: center; /* Añadido para centrar indicadores horizontalmente */
+}
+
+.carousel-indicatorsn li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicatorsn .active {
+  background-color: #3b3055;
+}
+
+.carousel-controln {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 50%;
   width: 40px;
@@ -87,12 +188,251 @@ section.awSlider {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.carousel-control.left {
-  left: 0;
+.carousel-controln.left {
+  left: 10px;
 }
 
-.carousel-control.right {
-  right: 0;
+.carousel-controln.right {
+  right: 10px;
+}
+
+.carousel-captionn {
+  position: relative;
+  padding: 10px;
+  background-color: #2d57a8;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel-captionn h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.carousel-captionn p {
+  margin: 0;
+}
+
+
+
+
+/* TOP */
+
+section.awSlidert {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-containert {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.288);
+}
+
+.carouselt {
+  display: flex; /* Cambiado a flex */
+  flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
+  align-items: center; /* Añadido para centrar items horizontalmente */
+}
+
+.carousel-innert {
+  width: 100%;
+  border: 2px solid #ccc; /* Añadido */
+  overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
+}
+
+.carousel-innert .itemt {
+  display: none;
+}
+
+.carousel-innert .itemt.active {
+  display: flex; /* Cambiado a flex */
+  height: auto;
+  flex-direction: column;
+}
+
+.carousel-innert img {
+  max-width: 120%;
+  height: auto;
+}
+
+.carousel-indicatorst { /* Añadido espacio entre indicadores y carrusel */
+  list-style: none;
+  padding: 0;
+  display: flex; /* Añadido flex para centrar indicadores */
+  justify-content: center; /* Añadido para centrar indicadores horizontalmente */
+}
+
+.carousel-indicatorst li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicatorst .active {
+  background-color: #3b3055;
+}
+
+.carousel-controlt {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-controlt.left {
+  left: 10px;
+}
+
+.carousel-controlt.right {
+  right: 10px;
+}
+
+.carousel-captiont {
+  position: relative;
+  padding: 10px;
+  background-color: #2d57a8;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel-captiont h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.carousel-captiont p {
+  margin: 0;
+}
+
+
+
+
+/* OFERTA ESPECIAL */
+
+section.awSlidero {
+  text-align: center;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-containero {
+  display: flex;
+  justify-content: space-around;
+  width: 95%;
+  align-items: center;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.288);
+}
+
+.carouselo {
+  display: flex; /* Cambiado a flex */
+  flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
+  align-items: center; /* Añadido para centrar items horizontalmente */
+}
+
+.carousel-innero {
+  width: 100%;
+  border: 2px solid #ccc; /* Añadido */
+  overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
+}
+
+.carousel-innero .itemo {
+  display: none;
+}
+
+.carousel-innero .itemo.active {
+  display: flex; /* Cambiado a flex */
+  height: auto;
+  flex-direction: column;
+}
+
+.carousel-innero img {
+  max-width: 120%;
+  height: auto;
+}
+
+.carousel-indicatorso { /* Añadido espacio entre indicadores y carrusel */
+  list-style: none;
+  padding: 0;
+  display: flex; /* Añadido flex para centrar indicadores */
+  justify-content: center; /* Añadido para centrar indicadores horizontalmente */
+}
+
+.carousel-indicatorso li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.carousel-indicatorso .active {
+  background-color: #3b3055;
+}
+
+.carousel-controlo {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-controlo.left {
+  left: 10px;
+}
+
+.carousel-controlo.right {
+  right: 10px;
+}
+
+.carousel-captiono {
+  position: relative;
+  padding: 10px;
+  background-color: #2d57a8;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+
+.carousel-captiono h3 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.carousel-captiono p {
+  margin: 0;
 }

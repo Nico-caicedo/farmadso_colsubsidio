@@ -19,12 +19,18 @@
     <?php 
     require_once 'templates/header.html';
     ?>
-  <main>
+  <main class="carrusleRecomendaciones">
   <?php 
     require_once 'templates/carrusel.html';
+    require_once 'templates/carruselnovedades.html';
     ?>
 </main>
-
+<main class="carrusleRecomendaciones">
+  <?php 
+    require_once 'templates/carruseltop.html';
+    require_once 'templates/carruselo.html';
+    ?>
+</main>
     <?php 
     require_once 'templates/footer.html';
     ?>
@@ -33,6 +39,9 @@
     <script src="assets/js/menuDesplegable.js"></script>
     <script src="assets/js/menuHamburguer.js"></script>
     <script src="assets/js/carrusel.js"></script>
+    <script src="assets/js/carruselnovedades.js"></script>
+    <script src="assets/js/carruseltop.js"></script>
+    <script src="assets/js/carruselo.js"></script>
 </body>
 
 </html>
