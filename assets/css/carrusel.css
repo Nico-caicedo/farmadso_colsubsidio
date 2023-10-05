@@ -35,7 +35,6 @@ section.awSlider {
 
 .carousel-inner {
   width: 80%;
-  border: 2px solid #ccc; /* Añadido */
   overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
 }
 
@@ -122,7 +121,7 @@ section.awSlider {
 
 section.awSlidern {
   text-align: center;
-  width: 50%;
+  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -145,8 +144,7 @@ section.awSlidern {
 }
 
 .carousel-innern {
-  width: 100%;
-  border: 2px solid #ccc; /* Añadido */
+  width: 80%;
   overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
 }
 
@@ -255,8 +253,7 @@ section.awSlidert {
 }
 
 .carousel-innert {
-  width: 100%;
-  border: 2px solid #ccc; /* Añadido */
+  width: 80%;
   overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
 }
 
@@ -365,8 +362,7 @@ section.awSlidero {
 }
 
 .carousel-innero {
-  width: 100%;
-  border: 2px solid #ccc; /* Añadido */
+  width: 80%;
   overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
 }
 
