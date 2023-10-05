@@ -29,11 +29,12 @@ section.awSlider {
   display: flex; /* Cambiado a flex */
   flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
   align-items: center; 
+  width: 80%;
   /* Añadido para centrar items horizontalmente */
 }
 
 .carousel-inner {
-  width: 100%;
+  width: 80%;
   border: 2px solid #ccc; /* Añadido */
   overflow: hidden; /* Añadido para ocultar contenido fuera de la vista */
 }
@@ -140,6 +141,7 @@ section.awSlidern {
   display: flex; /* Cambiado a flex */
   flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
   align-items: center; /* Añadido para centrar items horizontalmente */
+  width: 80%;
 }
 
 .carousel-innern {
@@ -249,6 +251,7 @@ section.awSlidert {
   display: flex; /* Cambiado a flex */
   flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
   align-items: center; /* Añadido para centrar items horizontalmente */
+  width: 80%;
 }
 
 .carousel-innert {
