@@ -1,34 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    
-    
+
+
 </head>
+
 <body>
-    <div class="ventana"id="vent">
+    <div class="ventana" id="vent">
         <article class="ventana1" id="vent1">
             <div id="cerrar"><a href="javascript:cerrar()"><i class="fa-regular fa-rectangle-xmark"></i></a></div>
             <div id="contenido-ventana">
-                <a href="javascript:abrir1()">Ver mas detalles</a>
-            </div>
-            
-                <article class="ventana3" id="vent3">
-                    <div id="cerrar"><a href="javascript:cerrar1()"><i class="fa-regular fa-rectangle-xmark"></i></a></div>
-                    <div id="contenido-ventana">
-                        
+                <div class="producto-seleccionado">
+                    <div class="imagen">
+                        <img src="assets/img/acetaminofen.jpg" alt="">
                     </div>
-            
-            
-                </article>
-                
-        
-    
-        </article>
-        </div>
+                    <div class="datos">
+                        <p>Acetaminofén Mk 500 Mg 20 Tabletas</p>
+                        <div class="precio-seleciona">
+                            <div class="precio">
+                                <h2>10.000$</h2>
+                                <small>Tableta a 1200</small>
+                            </div>
+                            <div class="seleccion">
+                                <span id="decrement">-</span>
+                                <input type="number" id="numberInput" value="1" min="1" max="20">
+                                <span id="increment">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- <a href="javascript:abrir()">MODAL</a> -->
+                <a class="btn-ver" href="javascript:abrir1()">Ver mas detalles</a>
+                <a class="btn-ver2" href="javascript:abrir3()">Agregar a mi carrito</a>
+            </div>
+
+            <article class="ventana3" id="vent3">
+                <div id="cerrar"><a href="javascript:cerrar1()"><i class="fa-regular fa-rectangle-xmark"></i></a></div>
+                <div id="contenido-ventana">
+
+                </div>
+
+
+            </article>
+
+
+
+        </article>
+    </div>
+
+    <!-- <a href="javascript:abrir()">MODAL</a> -->
 </body>
+
 </html>
