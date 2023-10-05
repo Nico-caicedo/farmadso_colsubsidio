@@ -29,8 +29,9 @@
             <div class="articles">d</div>
             <div class="articles">e</div>
             <div class="articles">f</div>
-            <div class="articles">g</div>
+            <div class="articles">mejia</div>
             <div class="articles">h</div>
+            <div class="articles">a</div>
             <div class="articles">a</div>
         </div>
         <div class="arrow" onclick="move('left')">&#10095;</div>
