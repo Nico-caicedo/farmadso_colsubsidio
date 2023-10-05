@@ -27,13 +27,28 @@
 #cerrar {
   position: absolute;
   color: var(--azulOscuro);
-  right: 8px;
-  top: 1px;
+  right: 10px;
+  top: 7px;
   font-size: 30px;
 }
 
 #cerrar a i {
   border-top-right-radius: 15px;
+}
+.ventana4 {
+  background-color: rgba(255, 255, 255, 0.521);
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
 }
 
 .ventana1 {
@@ -60,14 +75,14 @@
 .ventana3 {
   background-color: var(--azulClaro);
   width: 90%;
-  height: 100vh;
+  height: 90vh;
   color: white;
   font-size: 20px;
   text-align: center;
   padding: 10px;
   position: absolute;
-  right: 0%;
-  top: 0%;
+  right: 80px;
+  top: 50px;
   position: fixed;
   z-index: 2;
 
