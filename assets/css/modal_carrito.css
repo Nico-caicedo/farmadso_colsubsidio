@@ -1,54 +1,58 @@
 :root {
-    --azulOscuro: #2d57a8;
-    --verdeClaro: #b5ddca;
-    --verdeOscuro: #33a892;
-    --blanco: #fffefe;
-    --grisClaro : #f1f2f5;
-    --azulClaro: #6d93c9;
-    --fuente: sans-serif;
+  --azulOscuro: #2d57a8;
+  --verdeClaro: #b5ddca;
+  --verdeOscuro: #33a892;
+  --blanco: #fffefe;
+  --grisClaro: #f1f2f5;
+  --azulClaro: #6d93c9;
+  --fuente: sans-serif;
 }
-.ventana{
-    background-color: rgba(255, 255, 255, 0.521);
-    backdrop-filter: blur(0.1px);
-    width:100%;
-    height:100vh ;
-    color: white;
-    position: absolute;
-    left: 0px;
-    top: 0%;
-    z-index: 1;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-  }
-  #cerrar{
-    position: absolute;
-    color: var(--azulOscuro);
-    right: 8px;
-    top: 1px;
-    font-size: 30px;
-  }
-  #cerrar a i{
-    border-top-right-radius:15px ;
-  }
-  .ventana1{
-    background-color: var(--azulClaro);
-    width: 30%;
-    height:100vh ;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-    padding: 33px ;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    position: absolute;
-    right: 0%;
-    top: 0%;
-    position: fixed;
-    z-index: 2;
-  
-  }
+
+.ventana {
+  background-color: rgba(255, 255, 255, 0.521);
+  backdrop-filter: blur(0.1px);
+  width: 100%;
+  height: 100vh;
+  color: white;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+  z-index: 1;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+}
+
+#cerrar {
+  position: absolute;
+  color: var(--azulOscuro);
+  right: 8px;
+  top: 1px;
+  font-size: 30px;
+}
+
+#cerrar a i {
+  border-top-right-radius: 15px;
+}
+
+.ventana1 {
+  background-color: var(--azulClaro);
+  width: 26em;
+  height: 100vh;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  padding: 30px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  position: absolute;
+  right: 0%;
+  top: 0%;
+  position: fixed;
+  z-index: 2;
+
+}
 
 
   .ventana3{
@@ -65,26 +69,4 @@
     position: fixed;
     z-index: 2;
   
-  }
-  /* segunda modal */
-  #contenido-ventana1{
-    display: flex;
-    width: 100%;
-    height: 95%;
-    border: 1px solid;
-  }
-  .masdetalles1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    border: 1px solid red;
-  }
-  .masdetalles1 img{
-    width: 80%;
-  }
-  .masdetalles{
-    
-    width: 50%;
-    border: 1px solid red;
   }

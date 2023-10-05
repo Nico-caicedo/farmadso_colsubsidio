@@ -48,6 +48,8 @@
     <script src="assets/js/carruseltop.js"></script>
     <script src="assets/js/carruselo.js"></script>
     <script src="assets/js/modal_carrito.js" ></script>
+    <script src="assets/js/carritocant.js" ></script>
+    
 </body>
 
 </html>
