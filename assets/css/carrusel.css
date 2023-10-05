@@ -361,6 +361,7 @@ section.awSlidero {
   display: flex; /* Cambiado a flex */
   flex-direction: column-reverse; /* Añadido para alinear items verticalmente */
   align-items: center; /* Añadido para centrar items horizontalmente */
+  width: 80%;
 }
 
 .carousel-innero {
