@@ -24,7 +24,7 @@
         <div class="arrow" onclick="move('right')">&#10094;</div>
         <div class="carousel-container">
             <div class="articles">a</div>
-            <div class="articles">JHENS</div>
+            <div class="articles">b</div>
             <div class="articles">c</div>
             <div class="articles">d</div>
             <div class="articles">e</div>
