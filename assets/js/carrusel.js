@@ -1,35 +1,53 @@
-let currentSlide = 0;
-const dots = document.querySelectorAll('.dot');
-const articles = document.querySelectorAll('.articles');
-
-function move(direction) {
-    if (direction === 'left') {
-        currentSlide = (currentSlide - 1 + articles.length) % articles.length;
-    } else {
-        currentSlide = (currentSlide + 1) % articles.length;
+document.addEventListener("DOMContentLoaded", function() {
+    var currentSlide = 0;
+    var slides = document.querySelectorAll('.carousel-inner .item');
+    var indicators = document.querySelectorAll('.carousel-indicators li');
+  
+    function showSlide(index) {
+      slides[currentSlide].classList.remove('active');
+      indicators[currentSlide].classList.remove('active');
+      slides[index].classList.add('active');
+      indicators[index].classList.add('active');
+      currentSlide = index;
     }
-    updateUI();
-}
-
-function goToSlide(index) {
-    currentSlide = index;
-    updateUI();
-}
-
-function updateUI() {
-    const container = document.querySelector('.carousel-container');
-    container.style.transform = `translateX(-${currentSlide * 100}%)`;
-
-    dots.forEach((dot, index) => {
-        if (index === currentSlide) {
-            dot.classList.add('active');
-        } else {
-            dot.classList.remove('active');
-        }
+  
+    indicators.forEach(function(indicator, index) {
+      indicator.addEventListener('click', function() {
+        showSlide(index);
+      });
     });
-}
-
-// Añadido código para asegurar que 'a' sea el primer elemento visible al inicio
-window.addEventListener('DOMContentLoaded', () => {
-    updateUI();  // Asegurarse de que la UI esté actualizada
-});
+  
+    var prevButton = document.querySelector('.left.carousel-control');
+    prevButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      var newIndex = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(newIndex);
+    });
+  
+    var nextButton = document.querySelector('.right.carousel-control');
+    nextButton.addEventListener('click', function(e) {
+      e.preventDefault();
+      var newIndex = (currentSlide + 1) % slides.length;
+      showSlide(newIndex);
+    });
+  
+    // Automatizar el cambio de diapositivas
+    var interval = setInterval(function() {
+      var newIndex = (currentSlide + 1) % slides.length;
+      showSlide(newIndex);
+    }, 2000);
+  
+    // Pausar el carrusel al pasar el ratón sobre él
+    var carousel = document.querySelector('.carousel');
+    carousel.addEventListener('mouseenter', function() {
+      clearInterval(interval);
+    });
+  
+    carousel.addEventListener('mouseleave', function() {
+      interval = setInterval(function() {
+        var newIndex = (currentSlide + 1) % slides.length;
+        showSlide(newIndex);
+      }, 2000);
+    });
+  });
+  
