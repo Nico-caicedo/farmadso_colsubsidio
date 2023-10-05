@@ -339,7 +339,7 @@ section.awSlidert {
 
 section.awSlidero {
   text-align: center;
-  width: 50%;
+  flex: 1;
   display: flex;
   justify-content: center;
   flex-direction: column;
