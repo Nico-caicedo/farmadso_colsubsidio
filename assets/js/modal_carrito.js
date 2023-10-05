@@ -9,11 +9,11 @@ function cerrar() {
 }
 
 function abrir1() {
-    document.getElementById("vent3").style.display = "block";
+    document.getElementById("vent4").style.display = "block";
 }
 
 
 function cerrar1() {
-    document.getElementById("vent3").style.display = "none";
+    document.getElementById("vent4").style.display = "none";
     document.body.style.overflow = "auto"; // Reactiva el scroll en el body
 }
